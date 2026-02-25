@@ -2,18 +2,41 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Miglior Comparazione</title>
     <style>
-        body { font-family: Arial, sans-serif; display: flex; flex-direction: column; gap: 10px; padding: 20px; background-color: #ffffff; }
-        .btn { display: block; width: 100%; padding: 15px; border-radius: 8px; color: white; text-align: center; font-weight: bold; text-decoration: none; font-size: 16px; }
-        .sisal { background-color: #e30613; } /* Rojo */
-        .domusbet { background-color: #009640; } /* Verde */
-        .eplay { background-color: #0054a6; } /* Azul */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: transparent; /* Para que parezca integrado */
+            margin: 0;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 55px;
+            border-radius: 12px;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 17px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.1s;
+        }
+        .btn:active { transform: scale(0.98); }
+        .sisal { background-color: #E30613; }
+        .domusbet { background-color: #009640; }
+        .eplay { background-color: #0054A6; }
+        .icon { margin-left: 10px; font-size: 20px; }
     </style>
 </head>
 <body>
-    <a href="https://www.sisal.it/scommesse-matchpoint/quote/calcio/serie-a1" class="btn sisal">REGISTRATI SU SISAL</a>
-    <a href="https://www.goldbet.it/scommesse/sport/scelti-per-te/top-tornei/serie-a?did=0&nid=-1&eid=93" class="btn GOLDBET">REGISTRATI SU GOLDBET</a>
-    <a href="https://eplay24.it/scommesse/prematch/calcio/1/palinsesto/home" class="btn eplay">REGISTRATI SU EPLAY24</a>
+    <a href="TU_LINK_SISAL" class="btn sisal">1.82 SU SISAL <span class="icon">↗️</span></a>
+    <a href="TU_LINK_DOMUSBET" class="btn domusbet">1.80 SU DOMUSBET <span class="icon">↗️</span></a>
+    <a href="TU_LINK_EPLAY" class="btn eplay">1.80 SU EPLAY24 <span class="icon">↗️</span></a>
 </body>
 </html>
