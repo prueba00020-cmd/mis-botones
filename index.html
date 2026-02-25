@@ -3,40 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            background-color: #17212b; /* Color oscuro original de Telegram */
+            background-color: #17212b; /* Fondo azul oscuro de Telegram */
             margin: 0;
-            padding: 20px;
+            padding: 15px;
             display: flex;
             flex-direction: column;
-            gap: 12px;
-            overflow: hidden;
+            gap: 10px;
+            overflow: hidden; /* Evita que se desplace y parezca una web */
         }
         .btn {
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 55px;
-            border-radius: 12px;
+            height: 50px;
+            border-radius: 10px;
             color: white;
             text-decoration: none;
             font-weight: 700;
-            font-size: 17px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-            transition: transform 0.1s;
+            font-size: 16px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
         }
-        .btn:active { transform: scale(0.98); }
         .sisal { background-color: #e30613; }
         .domusbet { background-color: #009640; }
         .eplay { background-color: #0054a6; }
-        .icon { margin-left: 10px; font-size: 18px; }
     </style>
 </head>
 <body>
-    <a href="https://www.sisal.it/..." class="btn sisal">1.82 SU SISAL <span class="icon">↗️</span></a>
-    <a href="https://www.domusbet.it/..." class="btn domusbet">1.80 SU DOMUSBET <span class="icon">↗️</span></a>
-    <a href="https://eplay24.it/..." class="btn eplay">1.80 SU EPLAY24 <span class="icon">↗️</span></a>
+    <a href="https://www.sisal.it/..." class="btn sisal">1.82 SU SISAL ↗️</a>
+    <a href="https://www.domusbet.it/..." class="btn domusbet">1.80 SU DOMUSBET ↗️</a>
+    <a href="https://eplay24.it/..." class="btn eplay">1.80 SU EPLAY24 ↗️</a>
+
+    <script>
+        const webapp = window.Telegram.WebApp;
+        webapp.expand(); // Esto ayuda a que Telegram reconozca el tamaño interno
+        webapp.ready();
+    </script>
 </body>
 </html>
